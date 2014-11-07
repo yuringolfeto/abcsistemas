@@ -1,12 +1,3 @@
-<!--#include file="include/conexao.asp"-->
-<!--#include file="include/verifica.asp"-->
-<%'PARÂMETROS OBRIGATÓRIOS
-wprograma			= "pg_ae_040"
-wvariavel			= null
-
-SET QRY_MAQ = conexao.execute("pr_it_ler_maquinas")
-%>
-
 <!--#include file="include/top.asp"-->
 <table width="98%" border="1" cellspacing="0" cellpadding="0" class="cabecalho">
 <tr>
@@ -28,10 +19,8 @@ SET QRY_MAQ = conexao.execute("pr_it_ler_maquinas")
 	<td width="220">
 	<select name="status_cod" class="form" >
 		<option value=""></option>
-		<%DO UNTIL QRY_MAQ.EOF%>						
-			<option value="<%=QRY_MAQ("item_cod")%>" <%IF item_cod = QRY_MAQ("item_cod") THEN response.write "selected"%>><%=QRY_MAQ("item_descricao")%></option>
-		<%QRY_MAQ.MOVENEXT
-		LOOP%>
+								
+			<option value="">ABC</option>
 	</select>
 	</td>
 	<td>
@@ -39,8 +28,3 @@ SET QRY_MAQ = conexao.execute("pr_it_ler_maquinas")
 	</td>
 </table>
 </div>
-<!--#include file="include/bottom.asp"-->
-
-<%'FECHA CONEXÃO COM O BANCO DE DADOS
-QRY_MAQ.CLOSE			:	SET QRY_MAQ 		= nothing
-CONEXAO.CLOSE			:	SET CONEXAO 		= nothing%>
