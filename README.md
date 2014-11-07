@@ -13,12 +13,12 @@
 </tr>
 </table>
 
-<div id="scroll" divisor="40">
+<div divisor="40">
 <table width="100%" border="1" cellspacing="0" cellpadding="0">
 	<td width="220">
 	<select>
-		<option value=""></option>
-		<option value="">ABC</option>
+		<option value=""></option><br>
+		<option value="">ABC</option><br>
 		<option value="">DEF</option>
 	</select>
 	</td>
