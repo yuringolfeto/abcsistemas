@@ -19,6 +19,7 @@
 	<select>
 		<option value=""></option>
 		<option value="">ABC</option>
+		<option value="">DEF</option>
 	</select>
 	</td>
 	<td>
