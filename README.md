@@ -1,4 +1,3 @@
-<!--#include file="include/top.asp"-->
 <table width="98%" border="1" cellspacing="0" cellpadding="0" class="cabecalho">
 <tr>
 	<td width="220">Equip.</td>
@@ -17,10 +16,9 @@
 <div id="scroll" divisor="40">
 <table width="100%" border="1" cellspacing="0" cellpadding="0">
 	<td width="220">
-	<select name="status_cod" class="form" >
+	<select>
 		<option value=""></option>
-								
-			<option value="">ABC</option>
+		<option value="">ABC</option>
 	</select>
 	</td>
 	<td>
